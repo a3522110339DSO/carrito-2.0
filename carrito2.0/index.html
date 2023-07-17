@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./images/logoShop.png" alt="">
+            <div>
+                <img onclick="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                    
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./images/products/arrachera.jpg" alt="">
+                    <p><span>150</span>$</p>
+                </div>
+                <p class="title">"Arrachera asada"</p> 
+                    <p>corte de arrachera acompañado de ensalada y porcion de papas</p>
+                <a href="" data-id="1" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/asado.jpg" alt="">
+                    <p><span>220</span>$</p>
+                </div>
+                <p class="title"> "Pollo asado"</p>
+                <p>pollo entero asado al carbon sasonado con la receta especial de la casa"</p>
+                <a href="" class="btn-add-cart" data-id="2">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/barbacoa.jpg" alt="">
+                    <p><span>220</span>$</p>
+                </div>
+                <p class="title">"Pollo barbacoa"</p>
+                <p>pollo cocinado al estilo barbacoa carne suave y jugosa</p>
+                <a href="" data-id="3" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/cajita.jpg" alt="">
+                    <p><span>69</span>$</p>
+                </div>
+                <p class="title"> "Cajita mareada"</p>
+                <p>Nuestro especial para niños incluye nuggets,jugo,papas y juegute sorpresa</p>
+                <a href="" data-id="4" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/chistorra.jpg" alt="">
+                    <p><span>80</span>$</p>
+                </div>
+                <p class="title"> "Chistorra"</p>
+                <p>orden de chistorra asada ala carbon cortada en trozos incluye limones</p>
+                <a href="" data-id="5" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/enchilado.jpg" alt="">
+                    <p><span>220</span>$</p>
+                </div>
+                <p class="title"> "Pollo enchilado"</p>
+                <p>rico pollo marinado con nuestra receta de salsa con chiles y especias</p>
+                <a href="" data-id="6" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/kentucky.jpg" alt="">
+                    <p><span>230</span>$</p>
+                </div>
+                <p class="title"> "Pollo kentucky"</p>
+                <p>pollo cocinado al estilo kentucky empanizado extra crujiente</p>
+                <a href="" data-id="7" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/licor.jpg" alt="">
+                    <p><span>50</span>$</p>
+                </div>
+                <p class="title"> "Licor de maracuya"</p>
+                <p>exquisito licor hecho a base de maracuya totalmente natural</p>
+                <a href="" data-id="8" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/pastel.jpg" alt="">
+                    <p><span>35</span>$</p>
+                </div>
+                <p class="title"> "Pastel"</p>
+                <p> rebanada grande de pastel sabor chocolate hecho de 3 leches</p>
+                <a href="" data-id="9" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/queso.jpg" alt="">
+                    <p><span>50</span>$</p>
+                </div>
+                <p class="title"> "Queso asado"</p>
+                <p> porcion de nuestro queso asadero (38g) suave y delicioso</p>
+                <a href="" data-id="10" class="btn-add-cart">añadir al carrito</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p class="author">🪐 by <a target="_blank">UTT INNOVATICS</a></p>
+    </footer>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./custom.js" ></script>
+</body>
+</html>
